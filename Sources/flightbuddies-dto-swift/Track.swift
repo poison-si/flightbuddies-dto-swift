@@ -8,7 +8,7 @@
 import Foundation
 
 public struct Track: Codable {
-    var id: UUID?
-    var user: User.View?
-    var points: [TrackPoint]?
+    public var id: UUID?
+    public var user: User.View?
+    public var points: [TrackPoint]?
 }

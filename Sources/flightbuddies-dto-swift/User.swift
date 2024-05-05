@@ -9,17 +9,17 @@ import Foundation
 
 public struct User {
     public struct Create: Codable {
-        var username: String
-        var firstName: String?
-        var lastName: String?
-        var password: String
+        public var username: String
+        public var firstName: String?
+        public var lastName: String?
+        public var password: String
     }
 
     public struct View: Codable {
-        let username: String
-        let firstName: String?
-        let lastName: String?
-        let tracks: [Track]
-        let activeTrackId: UUID?
+        public let username: String
+        public let firstName: String?
+        public let lastName: String?
+        public let tracks: [Track]
+        public let activeTrackId: UUID?
     }
 }

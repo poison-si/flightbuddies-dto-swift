@@ -8,13 +8,13 @@
 import Foundation
 
 public struct TrackPoint: Codable {
-    let latitude: Double
-    let longitude: Double
-    let altitude: Double
-    let timestamp: Date
-    let speed: Double?
-    let climb: Double?
-    let heading: Double?
-    let course: Double?
-    let track: Track?
+    public let latitude: Double
+    public let longitude: Double
+    public let altitude: Double
+    public let timestamp: Date
+    public let speed: Double?
+    public let climb: Double?
+    public let heading: Double?
+    public let course: Double?
+    public let track: Track?
 }
