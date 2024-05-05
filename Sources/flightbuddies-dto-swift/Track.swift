@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Track: Codable {
+public struct Track: Codable {
     var id: UUID?
     var user: User.View?
     var points: [TrackPoint]?

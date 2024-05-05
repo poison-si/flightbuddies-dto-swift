@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TrackPoint: Codable {
+public struct TrackPoint: Codable {
     let latitude: Double
     let longitude: Double
     let altitude: Double
