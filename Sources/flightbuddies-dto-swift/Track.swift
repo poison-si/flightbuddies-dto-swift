@@ -8,13 +8,15 @@
 import Foundation
 
 public struct Track: Codable {
-    public let id: UUID?
-    public let user: User.View?
-    public let points: [TrackPoint]?
+    public struct View {
+        public let id: UUID?
+        public let user: User.View?
+        public let points: [TrackPoint]?
 
-    public init(id: UUID?, user: User.View?, points: [TrackPoint]?) {
-        self.id = id
-        self.user = user
-        self.points = points
+        public init(id: UUID?, user: User.View?, points: [TrackPoint]?) {
+            self.id = id
+            self.user = user
+            self.points = points
+        }
     }
 }

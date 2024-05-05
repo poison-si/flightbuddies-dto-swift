@@ -8,7 +8,6 @@
 import Foundation
 
 public struct User {
-
     public struct Create: Codable {
         public var username: String
         public var firstName: String?
