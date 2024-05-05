@@ -19,9 +19,9 @@ public struct TrackPoint: Codable {
         public let climb: Double?
         public let heading: Double?
         public let course: Double?
-        public let track: Track.View?
+        public let trackId: UUID?
 
-        public init(latitude: Double, longitude: Double, altitude: Double, timestamp: Date, speed: Double?, climb: Double?, heading: Double?, course: Double?, track: Track.View?) {
+        public init(latitude: Double, longitude: Double, altitude: Double, timestamp: Date, speed: Double?, climb: Double?, heading: Double?, course: Double?, trackId: UUID?) {
             self.latitude = latitude
             self.longitude = longitude
             self.altitude = altitude
@@ -30,7 +30,7 @@ public struct TrackPoint: Codable {
             self.climb = climb
             self.heading = heading
             self.course = course
-            self.track = track
+            self.trackId = trackId
         }
     }
 }

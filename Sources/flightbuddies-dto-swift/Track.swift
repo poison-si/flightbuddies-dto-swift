@@ -11,9 +11,9 @@ public struct Track {
     public struct View: Codable {
         public let id: UUID?
         public let user: User.View?
-        public let points: [TrackPoint]?
+        public let points: [TrackPoint.View]?
 
-        public init(id: UUID?, user: User.View?, points: [TrackPoint]?) {
+        public init(id: UUID?, user: User.View?, points: [TrackPoint.View]?) {
             self.id = id
             self.user = user
             self.points = points
