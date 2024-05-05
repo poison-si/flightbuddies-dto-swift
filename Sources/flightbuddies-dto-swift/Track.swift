@@ -7,8 +7,8 @@
 
 import Foundation
 
-public struct Track: Codable {
-    public struct View {
+public struct Track {
+    public struct View: Codable {
         public let id: UUID?
         public let user: User.View?
         public let points: [TrackPoint]?

@@ -26,10 +26,10 @@ public struct User {
         public let username: String
         public let firstName: String?
         public let lastName: String?
-        public let tracks: [Track]
+        public let tracks: [Track.View]
         public let activeTrackId: UUID?
 
-        public init(username: String, firstName: String?, lastName: String?, tracks: [Track], activeTrackId: UUID?) {
+        public init(username: String, firstName: String?, lastName: String?, tracks: [Track.View], activeTrackId: UUID?) {
             self.username = username
             self.firstName = firstName
             self.lastName = lastName
