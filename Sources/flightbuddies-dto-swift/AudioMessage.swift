@@ -10,7 +10,7 @@ import Foundation
 public struct AudioMessage {
     public struct Create: Codable {
         public let recipients: Kind
-        public let image: Data
+        public let audio: Data
     }
 
     public struct View: Codable {
