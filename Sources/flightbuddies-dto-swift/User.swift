@@ -28,9 +28,9 @@ public struct User {
         public let lastName: String?
         public let tracks: [Track.View]
         public let activeTrackId: UUID?
-        public let lastPoint: TrackPoint?
+        public let lastPoint: TrackPoint.View?
 
-        public init(username: String, firstName: String?, lastName: String?, tracks: [Track.View], activeTrackId: UUID?, lastPoint: TrackPoint?) {
+        public init(username: String, firstName: String?, lastName: String?, tracks: [Track.View], activeTrackId: UUID?, lastPoint: TrackPoint.View?) {
             self.username = username
             self.firstName = firstName
             self.lastName = lastName
