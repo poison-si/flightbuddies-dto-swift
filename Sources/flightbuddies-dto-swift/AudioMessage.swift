@@ -9,17 +9,17 @@ import Foundation
 
 public struct AudioMessage {
     public struct Create: Codable {
-        public let recipients: Recipients
+        public let recipients: Kind
         public let image: Data
     }
 
     public struct View: Codable {
-        public let recipients: Recipients
+        public let recipients: Kind
         public let image: Data
         public let senderId: UUID
     }
 
-    public enum Recipients: Codable {
+    public enum Kind: Codable {
         case gaggle
         case nearby
         case team
