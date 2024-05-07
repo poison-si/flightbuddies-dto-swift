@@ -15,7 +15,7 @@ public struct AudioMessage {
 
     public struct View: Codable {
         public let kind: Kind
-        public let image: Data
+        public let audio: Data
         public let senderId: UUID
     }
 

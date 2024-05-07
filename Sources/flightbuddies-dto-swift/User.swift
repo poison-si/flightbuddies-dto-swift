@@ -28,13 +28,15 @@ public struct User {
         public let lastName: String?
         public let tracks: [Track.View]
         public let activeTrackId: UUID?
+        public let lastPoint: TrackPoint?
 
-        public init(username: String, firstName: String?, lastName: String?, tracks: [Track.View], activeTrackId: UUID?) {
+        public init(username: String, firstName: String?, lastName: String?, tracks: [Track.View], activeTrackId: UUID?, lastPoint: TrackPoint?) {
             self.username = username
             self.firstName = firstName
             self.lastName = lastName
             self.tracks = tracks
             self.activeTrackId = activeTrackId
+            self.lastPoint = lastPoint
         }
     }
 
