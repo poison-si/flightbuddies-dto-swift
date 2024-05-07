@@ -30,10 +30,9 @@ public struct AudioMessage {
         }
     }
 
-    public enum Kind: Codable {
-        case gaggle
-        case nearby
-        case team
-        case pilots(ids: [UUID])
+    public enum Kind: String, Codable {
+        case gaggle = "gaggle"
+        case nearby = "nearby"
+        case team = "team"
     }
 }
