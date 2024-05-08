@@ -42,15 +42,13 @@ public struct User {
 
     public struct TrackingView: Codable {
         public let username: String
-        public let firstName: String?
-        public let lastName: String?
+        public let name: String
         public let distance: Double
-        public let lastPoint: TrackPoint.View?
+        public let lastPoint: TrackPoint.View
 
-        public init(username: String, firstName: String?, lastName: String?, distance: Double, lastPoint: TrackPoint.View?) {
+        public init(username: String, name: String, distance: Double, lastPoint: TrackPoint.View) {
             self.username = username
-            self.firstName = firstName
-            self.lastName = lastName
+            self.name = name
             self.distance = distance
             self.lastPoint = lastPoint
         }
